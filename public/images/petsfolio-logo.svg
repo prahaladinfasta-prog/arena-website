@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="none">
+  <circle cx="22" cy="25" r="18" fill="#0F766E"/>
+  <path d="M12 20 Q22 12 32 20" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M14 26 Q22 32 30 26" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="50" y="33" fill="#0F766E" font-family="Arial, sans-serif" font-weight="700" font-size="26">Petsfolio</text>
+</svg>
