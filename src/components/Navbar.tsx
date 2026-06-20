@@ -1,10 +1,6 @@
 import { useState } from 'react';
 
-interface NavbarProps {
-  onContactClick: () => void;
-}
-
-const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
+const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
@@ -53,11 +49,11 @@ const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
           ))}
         </div>
 
-        {/* Right Actions */}
-
+        {/* Mobile Menu Toggle */}
+        <div className="lg:hidden flex items-center">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 text-slate-700"
+            className="p-2 text-slate-700"
           >
             {isOpen ? (
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -84,12 +80,6 @@ const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
               {item.label}
             </button>
           ))}
-          <button
-            onClick={() => { onContactClick(); setIsOpen(false); }}
-            className="mt-2 w-full py-3 bg-amber-500 text-white rounded-full font-semibold"
-          >
-            Partner with Us
-          </button>
         </div>
       )}
     </nav>
