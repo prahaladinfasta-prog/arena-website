@@ -17,7 +17,7 @@ const team = [
     name: 'Mahesh',
     role: 'Platform Technical',
     desc: 'Architects and builds the core technology platform powering the Petsfolio marketplace.',
-    image: '/images/team-mahesh.png',
+    image: '/images/team-mahesh.jpg',
     color: 'from-indigo-500 to-violet-600',
   },
   {
