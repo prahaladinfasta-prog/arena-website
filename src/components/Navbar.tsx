@@ -41,11 +41,16 @@ const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
             <div className="font-bold text-2xl tracking-tight text-teal-900">Petsfolio</div>
             <div className="text-[10px] text-teal-600 -mt-1.5 font-medium tracking-wider">PET WELLNESS ECOSYSTEM</div>
           </div>*/}
-           <div className="flex items-center gap-3" style="width:130px;height:60px">
-         
-         <img src="/images/pf logo.png" alt="logo" style="width:100%;height:100%"/>
-        </div>
-
+          <div 
+  className="flex items-center gap-3" 
+  style={{ width: '130px', height: '60px' }}
+>
+  <img 
+    src="/images/pf logo.png" 
+    alt="logo" 
+    style={{ width: '100%', height: '100%' }}
+  />
+</div>
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-7 text-sm font-medium">
           {navLinks.map(link => (
