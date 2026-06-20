@@ -54,13 +54,7 @@ const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
         </div>
 
         {/* Right Actions */}
-        <div className="flex items-center gap-3">
-          <button
-            onClick={onContactClick}
-            className="hidden md:inline-flex px-6 py-2.5 bg-amber-500 hover:bg-amber-600 text-white text-sm font-semibold rounded-full transition-all active:scale-[0.985]"
-          >
-            Partner with Us
-          </button>
+
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden p-2 text-slate-700"
