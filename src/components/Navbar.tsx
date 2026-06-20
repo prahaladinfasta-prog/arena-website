@@ -31,7 +31,7 @@ const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
- <div className="flex items-center gap-3" style="width:130px;height:60px">
+ 
          
          <img src="/images/pf logo.png" alt="logo" style="width:100%;height:100%"/>      
  </div>
