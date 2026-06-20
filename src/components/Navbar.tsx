@@ -33,7 +33,7 @@ const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-3">
          
-         <img src="public/images/pf logo.png" alt="logo"/>
+         <img src="/images/event2.jpg" alt="logo"/>
         </div>
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-7 text-sm font-medium">
