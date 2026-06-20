@@ -321,27 +321,30 @@ function App() {
       </section>
 
       {/* ===== FOOTER ===== */}
-      <footer className="bg-slate-950 text-white/60 text-sm py-12">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-y-8">
-          <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-9 h-9 rounded-xl bg-teal-800 flex items-center justify-center">
-                <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M4.5 11.5c-1 0-2-.5-2-2s1.5-3 2.5-3 1.5 1 1.5 2.5-1 2.5-2 2.5zm5-4c-1 0-2-.5-2-2s1.5-3 2.5-3 1.5 1 1.5 2.5-1 2.5-2 2.5zm5 0c-1 0-2-.5-2-2s1.5-3 2.5-3 1.5 1 1.5 2.5-1 2.5-2 2.5zm5 4c-1 0-2-.5-2-2s1.5-3 2.5-3 1.5 1 1.5 2.5-1 2.5-2 2.5zM12 22c-3.5 0-6-2.5-6-5.5C6 13 9 11 12 11s6 2 6 5.5c0 3-2.5 5.5-6 5.5z"/>
-                </svg>
-              </div>
-              <div className="font-semibold text-white text-xl tracking-tight">Petsfolio</div>
-            </div>
-            <div>Petsfolio Pet Services Pvt. Ltd.</div>
-            <div className="mt-1">India's Trusted Pet Wellness, Care &amp; Insurance Platform</div>
-          </div>
-          <div className="md:text-right text-sm">
-            <div>5 Major Cities • 7+ Years • 10,000+ Pet Parents</div>
-            <div className="mt-px">Official K9 Vendor — Andhra Pradesh &amp; Telangana</div>
-            <div className="mt-7 text-white/40">© {new Date().getFullYear()} Petsfolio Pet Services Pvt. Ltd. All rights reserved.</div>
-          </div>
-        </div>
-      </footer>
+     <footer className="bg-slate-950 text-white/60 text-sm py-12">
+  <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-y-8">
+    <div>
+      {/* Updated Logo Section */}
+      <div className="flex items-center gap-3 mb-4 w-[130px] h-[60px]">
+        <img 
+          src="/images/pf logo.png" 
+          alt="Petsfolio Logo" 
+          className="w-full h-full object-contain"
+        />
+      </div>
+      <div>Petsfolio Pet Services Pvt. Ltd.</div>
+      <div className="mt-1">India's Trusted Pet Wellness, Care &amp; Insurance Platform</div>
+    </div>
+    
+    <div className="md:text-right text-sm">
+      <div>5 Major Cities • 7+ Years • 10,000+ Pet Parents</div>
+      <div className="mt-px">Official K9 Vendor — Andhra Pradesh &amp; Telangana</div>
+      <div className="mt-7 text-white/40">
+        © {new Date().getFullYear()} Petsfolio Pet Services Pvt. Ltd. All rights reserved.
+      </div>
+    </div>
+  </div>
+</footer>
 
       {/* Partnership Contact Modal */}
       <ContactModal
