@@ -14,11 +14,11 @@ const team = [
     color: 'from-amber-500 to-orange-600',
   },
   {
-    name: 'Ugendra Lakshmidas',
-    role: 'Director – Digital / Marketing',
-    desc: 'Drives brand growth, digital campaigns, and market expansion for the Petsfolio ecosystem.',
+    name: 'Mahesh',
+    role: 'Platform Technical',
+    desc: 'Architects and builds the core technology platform powering the Petsfolio marketplace.',
     image: '/images/team-mahesh.png',
-    color: 'from-amber-500 to-orange-600',
+    color: 'from-indigo-500 to-violet-600',
   },
   {
     name: 'Dr. Madhuritha Gupta',
