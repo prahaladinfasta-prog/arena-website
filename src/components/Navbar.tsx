@@ -31,29 +31,18 @@ const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-       {/*   <div className="w-10 h-10 rounded-xl bg-teal-800 flex items-center justify-center">
-            <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M4.5 11.5c-1 0-2-.5-2-2s1.5-3 2.5-3 1.5 1 1.5 2.5-1 2.5-2 2.5zm5-4c-1 0-2-.5-2-2s1.5-3 2.5-3 1.5 1 1.5 2.5-1 2.5-2 2.5zm5 0c-1 0-2-.5-2-2s1.5-3 2.5-3 1.5 1 1.5 2.5-1 2.5-2 2.5zm5 4c-1 0-2-.5-2-2s1.5-3 2.5-3 1.5 1 1.5 2.5-1 2.5-2 2.5zM12 22c-3.5 0-6-2.5-6-5.5C6 13 9 11 12 11s6 2 6 5.5c0 3-2.5 5.5-6 5.5z"/>
-            </svg>
-          </div>
-          <div>
-            <div className="font-bold text-2xl tracking-tight text-teal-900">Petsfolio</div>
-            <div className="text-[10px] text-teal-600 -mt-1.5 font-medium tracking-wider">PET WELLNESS ECOSYSTEM</div>
-          </div>*/}
-          <div 
-  className="flex items-center gap-3" 
-  style={{ width: '130px', height: '60px' }}
->
-  <img 
-    src="/images/pf logo.png" 
-    alt="logo" 
-    style={{ width: '100%', height: '100%' }}
-  />
-</div>
+        {/* Logo Container */}
+        <div className="flex items-center gap-3 w-[130px] h-[60px]">
+          <img 
+            src="/images/pf logo.png" 
+            alt="logo" 
+            className="w-full h-full object-contain"
+          />
+        </div>
+
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-7 text-sm font-medium">
-          {navLinks.map(link => (
+          {navLinks.map((link) => (
             <button
               key={link.id}
               onClick={() => scrollToSection(link.id)}
@@ -64,6 +53,7 @@ const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
           ))}
         </div>
 
+        {/* Right Actions */}
         <div className="flex items-center gap-3">
           <button
             onClick={onContactClick}
@@ -91,8 +81,12 @@ const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="lg:hidden bg-white border-t px-6 py-4 flex flex-col gap-3 text-sm font-medium shadow-lg">
-          {navLinks.map(item => (
-            <button key={item.id} onClick={() => scrollToSection(item.id)} className="text-left py-2 text-slate-700 hover:text-teal-700 transition-colors">
+          {navLinks.map((item) => (
+            <button 
+              key={item.id} 
+              onClick={() => scrollToSection(item.id)} 
+              className="text-left py-2 text-slate-700 hover:text-teal-700 transition-colors"
+            >
               {item.label}
             </button>
           ))}
