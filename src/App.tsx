@@ -65,53 +65,63 @@ function App() {
   ];
 
   const recognitions = [
-    {
-      title: "Official K9 Vendor",
-      desc: "Andhra Pradesh & Telangana State Police K9 Procurement",
-      icon: (
-        <svg className="w-10 h-10 text-teal-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15a2.25 2.25 0 012.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V19.5a2.25 2.25 0 002.25 2.25h.75" />
-        </svg>
-      ),
-    },
-    {
-      title: "Karnataka Business Award",
-      desc: "Best Pet Services Category",
-      icon: (
-        <svg className="w-10 h-10 text-amber-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M18.75 4.236c.982.143 1.954.317 2.916.52A6.003 6.003 0 0016.27 9.728M18.75 4.236V4.5c0 2.108-.966 3.99-2.48 5.228m0 0a6.04 6.04 0 01-2.02 1.118M12 12.75a6.04 6.04 0 01-2.02-1.118" />
-        </svg>
-      ),
-    },
-    {
-      title: "Most Promising Business",
-      desc: "Awarded by GAN & GCCI — Goa Angels Network",
-      icon: (
-        <svg className="w-10 h-10 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
-        </svg>
-      ),
-    },
-    {
-      title: "Health Awareness Partner",
-      desc: "Health Awareness Association with Dr. Lakshmi Srinivasan",
-      icon: (
-        <svg className="w-10 h-10 text-rose-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-        </svg>
-      ),
-    },
-    {
-      title: "MSME Recognized",
-      desc: "Recognized & Registered under MSME — Government of India",
-      icon: (
-        <svg className="w-10 h-10 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
-        </svg>
-      ),
-    },
-  ];
-
+   const achievements = [
+  {
+    title: "Official K9 Vendor",
+    desc: "Andhra Pradesh & Telangana State Police K9 Procurement",
+    icon: (
+      <img
+        src="/images/tg-logo.png"
+        alt="TG Logo"
+        className="w-10 h-10 object-contain"
+      />
+    ),
+  },
+  {
+    title: "Karnataka Business Award",
+    desc: "Best Pet Services Category",
+    icon: (
+      <img
+        src="/images/tg-logo.png"
+        alt="TG Logo"
+        className="w-10 h-10 object-contain"
+      />
+    ),
+  },
+  {
+    title: "Most Promising Business",
+    desc: "Awarded by GAN & GCCI — Goa Angels Network",
+    icon: (
+      <img
+        src="/images/tg-logo.png"
+        alt="TG Logo"
+        className="w-10 h-10 object-contain"
+      />
+    ),
+  },
+  {
+    title: "Health Awareness Partner",
+    desc: "Health Awareness Association with Dr. Lakshmi Srinivasan",
+    icon: (
+      <img
+        src="/images/tg-logo.png"
+        alt="TG Logo"
+        className="w-10 h-10 object-contain"
+      />
+    ),
+  },
+  {
+    title: "MSME Recognized",
+    desc: "Recognized & Registered under MSME — Government of India",
+    icon: (
+      <img
+        src="/images/tg-logo.png"
+        alt="TG Logo"
+        className="w-10 h-10 object-contain"
+      />
+    ),
+  },
+];
   const whyPartner = [
     { title: "Direct Access to Verified Pet Parents", desc: "Reach engaged, high-intent pet owners across India through our trusted platform and events.", icon: "👥" },
     { title: "Strong Veterinary & Breeder Network", desc: "Tap into 86+ partnered vet clinics and breeders with established relationships.", icon: "🏥" },
