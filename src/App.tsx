@@ -65,7 +65,6 @@ function App() {
   ];
 
   const recognitions = [
-   const achievements = [
   {
     title: "Official K9 Vendor",
     desc: "Andhra Pradesh & Telangana State Police K9 Procurement",
