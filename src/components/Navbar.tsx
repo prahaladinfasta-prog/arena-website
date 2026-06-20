@@ -30,9 +30,22 @@ const Navbar: React.FC<NavbarProps> = ({ onContactClick }) => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">    
-         <img src="/images/pf logo.png" alt="logo"/>      
- </div>
+      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div className="flex items-center gap-3">
+       {/*   <div className="w-10 h-10 rounded-xl bg-teal-800 flex items-center justify-center">
+            <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4.5 11.5c-1 0-2-.5-2-2s1.5-3 2.5-3 1.5 1 1.5 2.5-1 2.5-2 2.5zm5-4c-1 0-2-.5-2-2s1.5-3 2.5-3 1.5 1 1.5 2.5-1 2.5-2 2.5zm5 0c-1 0-2-.5-2-2s1.5-3 2.5-3 1.5 1 1.5 2.5-1 2.5-2 2.5zm5 4c-1 0-2-.5-2-2s1.5-3 2.5-3 1.5 1 1.5 2.5-1 2.5-2 2.5zM12 22c-3.5 0-6-2.5-6-5.5C6 13 9 11 12 11s6 2 6 5.5c0 3-2.5 5.5-6 5.5z"/>
+            </svg>
+          </div>
+          <div>
+            <div className="font-bold text-2xl tracking-tight text-teal-900">Petsfolio</div>
+            <div className="text-[10px] text-teal-600 -mt-1.5 font-medium tracking-wider">PET WELLNESS ECOSYSTEM</div>
+          </div>*/}
+           <div className="flex items-center gap-3" style="width:130px;height:60px">
+         
+         <img src="/images/pf logo.png" alt="logo" style="width:100%;height:100%"/>
+        </div>
+
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-7 text-sm font-medium">
           {navLinks.map(link => (
